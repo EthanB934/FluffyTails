@@ -1,3 +1,20 @@
+header {
+    background-color: pink;
+    height: 46px;
+}
+
 .business-name {
+    padding-top: 5px;
+    margin-top: 10px;
     text-align: center;
+}
+
+.services {
+    width: 50%;
+    float: left;
+}
+
+.rates {
+    width: 50%;
+    float: right;
 }
