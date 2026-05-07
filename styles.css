@@ -18,11 +18,14 @@ header {
     height: 46px;
 }
 .services {
-    float: left;
-    width: 50%;
+  width: 40%;
 }
 
 .rates {
-    float: right;
-    width: 50%;
+    width: 40%;
+}
+
+.services-rates-columns {
+    display: flex;
+    justify-content: space-around;
 }
