@@ -1,20 +1,28 @@
+.about {
+    justify-items: center; 
+}
+
+.about > p{
+    display: block;
+    width: 50%;
+}
+
+.business-name {
+    margin-top: 10px;
+    padding-top: 5px;
+    text-align: center;
+}
+
 header {
     background-color: pink;
     height: 46px;
 }
-
-.business-name {
-    padding-top: 5px;
-    margin-top: 10px;
-    text-align: center;
-}
-
 .services {
-    width: 50%;
     float: left;
+    width: 50%;
 }
 
 .rates {
-    width: 50%;
     float: right;
+    width: 50%;
 }
