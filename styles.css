@@ -4,15 +4,22 @@
     width: 50%;
 }
 
-h2 {
-    position: relative;
-    left: 4.75%;
-}
-
 .business-name {
     margin-top: 10px;
     padding-top: 5px;
     text-align: center;
+}
+
+.button-group {
+    margin-left: 4.75%;
+}
+
+footer {
+    margin-left: 4.75%;
+}
+
+h2 {
+    margin-left: 4.75%;
 }
 
 header {
@@ -42,5 +49,5 @@ html {
 }
 
 .services-heading, .rates-heading {
-    position: static;
+    margin-left: 0;
 } 
