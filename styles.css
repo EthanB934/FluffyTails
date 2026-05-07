@@ -1,10 +1,15 @@
 .about {
-    justify-items: center; 
+    left: 10%;
+    position: relative;
+    width: 50%;
 }
 
 .about > p{
-    display: block;
-    width: 50%;
+}
+
+.about-h2 {
+    position: relative;
+    left: 4.75%;
 }
 
 .business-name {
