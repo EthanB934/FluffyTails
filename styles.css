@@ -4,7 +4,7 @@
     width: 50%;
 }
 
-.about-h2 {
+h2 {
     position: relative;
     left: 4.75%;
 }
@@ -40,3 +40,7 @@ html {
     display: flex;
     justify-content: space-around;
 }
+
+.services-heading, .rates-heading {
+    position: static;
+} 
