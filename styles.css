@@ -5,6 +5,7 @@
 }
 
 .business-name {
+    color: white;
     margin-top: 10px;
     padding-top: 5px;
     text-align: center;
@@ -20,6 +21,7 @@ footer {
 
 h2 {
     margin-left: 4.75%;
+    color: var(--text-color);
 }
 
 header {
@@ -29,6 +31,7 @@ header {
 
 html {
     margin: var(--page-margin);
+    background-color: var(--main-color);
 }
 
 .services {
@@ -41,6 +44,8 @@ html {
 
 :root {
     --page-margin: 2%;
+    --text-color: #00008b;
+    --main-color: #ffbfcabf;
 }
 
 .services-rates-columns {
