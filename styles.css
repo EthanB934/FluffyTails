@@ -17,12 +17,21 @@ header {
     background-color: pink;
     height: 46px;
 }
+
+html {
+    margin: var(--page-margin);
+}
+
 .services {
   width: 40%;
 }
 
 .rates {
     width: 40%;
+}
+
+:root {
+    --page-margin: 2%;
 }
 
 .services-rates-columns {
