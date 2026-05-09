@@ -8,10 +8,8 @@ export default async function renderImages() {
     let imgHtmlString = "";
 
     for (let i = 0; i < images.length; i++) {
-        imgHtmlString += `<img 
-        src="../assets/${images[i].fileName}"
-        class="dog-image"
-        />`
+        imgHtmlString += `
+            <img class="dog-image" src="../assets/${images[i].fileName}"/>`
     }
 
     return imageContainerEl.innerHTML += imgHtmlString;
