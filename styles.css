@@ -4,12 +4,38 @@
     width: 50%;
 }
 
+body {
+    background-color: var(--main-color);
+    padding: 2%;
+}
+
 .business-name {
-    color: white;
-    margin-bottom: 0;
-    margin-top: 10px;
-    padding-top: 5px;
+    color: var(--accent-color);
+    font-size: 5em;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-top: 2%;
     text-align: center;
+}
+
+.business-name-subheading {
+    font-size: 2.5em;
+    margin-left: 0px;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.business-type {
+    color: var(--secondary-color);
+    max-width: 90%;
+    text-align: right;
+}
+
+button {
+    background-color: var(--secondary-color);
+    color: var(--accent-color);
+    min-height: 10%;
+    min-width: 10%;
 }
 
 .button-group {
@@ -19,30 +45,38 @@
 .dog-image {
     min-width: 1em;
     min-height: 1em;
+    max-height: 5em;
+    max-width: 5em;
 
     object-fit: cover;
 }
 
 footer {
+    display: flex;
+    margin-bottom: 0px;
     margin-left: 4.75%;
+}
+footer > p{
+    margin-top: 0px;
 }
 
 h2 {
     margin-left: 4.75%;
-    color: var(--text-color);
+    color: var(--secondary-color);
 }
 
 header {
-    background-color: pink;
+    background-color: var(--main-color);
 }
 
 html {
     margin: var(--page-margin);
-    background-color: var(--main-color);
+    background-color: var(--secondary-color);
+    color: var(--accent-color)
 }
 
 .image-collection {
-    background-color: white;
+    background-color: var(--accent-color);
     border-bottom: 2px solid black;
     border-left: 2px solid black;
     border-right: 2px solid black;
@@ -65,8 +99,11 @@ html {
 
 :root {
     --page-margin: 2%;
-    --text-color: #00008b;
-    --main-color: #ffbfcabf;
+    /* --secondary-color: #00008b; */
+    --secondary-color: darkblue;
+    /* --main-color: #ffbfcabf; */
+    --main-color: hotpink;
+    --accent-color: white;
 }
 
 .services-rates-columns {
