@@ -33,13 +33,24 @@ body {
 
 button {
     background-color: var(--secondary-color);
+    border: none;
+    border-radius: 2%;
     color: var(--accent-color);
-    min-height: 10%;
-    min-width: 10%;
+    font-size: x-large;
+    min-width: 40%;
+    padding: .75%;
+}
+
+button:hover {
 }
 
 .button-group {
-    margin-left: 4.75%;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-us-description, .contact-us-info {
+    width: 40%;
 }
 
 .dog-image {
@@ -53,9 +64,10 @@ button {
 
 footer {
     display: flex;
+    justify-content: space-around;
     margin-bottom: 0px;
-    margin-left: 4.75%;
 }
+
 footer > p{
     margin-top: 0px;
 }
