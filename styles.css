@@ -9,6 +9,10 @@
     text-align: center;
 }
 
+.boarding-header {
+    margin-left: 0;
+    text-align: center;
+}
 body {
     background-color: var(--main-color);
     padding: 2%;
@@ -86,6 +90,9 @@ h3 {
     color: var(--secondary-color);
 }
 
+h4 {
+    color: var(--secondary-color);
+}
 header {
     background-color: var(--main-color);
 }
@@ -111,12 +118,25 @@ html {
 }
 
 .services {
-  width: 40%;
+    display: block;
+    width: 50%;
+    margin: 0 auto;
 }
 
-.rates {
-    width: 40%;
+.service-and-rate {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 50%;
 }
+
+.service-and-rate-description {
+    text-align: center;
+}
+/* .rates {
+    width: 40%;
+} */
 
 :root {
     --page-margin: 2%;
