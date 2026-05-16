@@ -1,86 +1,21 @@
-.about {
-    display: block;
-    width: 50%;
-    margin: 0 auto;
+/* ===== ROOT VARIABLES ===== */
+:root {
+    --page-margin: 2%;
+    --secondary-color: darkblue;
+    --main-color: hotpink;
+    --accent-color: white;
 }
 
-.about-header {
-    margin-left: 0;
-    text-align: center;
+/* ===== BASE STYLES ===== */
+html {
+    margin: var(--page-margin);
+    background-color: var(--secondary-color);
+    color: var(--accent-color);
 }
 
-.boarding-header {
-    margin-left: 0;
-    text-align: center;
-}
 body {
     background-color: var(--main-color);
     padding: 2%;
-}
-
-.business-name {
-    color: var(--accent-color);
-    font-size: 5em;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    padding-top: 2%;
-    text-align: center;
-}
-
-.business-name-subheading {
-    font-size: 2.5em;
-    margin-left: 0px;
-    margin-top: 0px;
-    text-align: center;
-}
-
-.business-type {
-    border-bottom: 1px solid black;
-    color: var(--secondary-color);
-    text-align: right;
-}
-
-button {
-    background-color: var(--secondary-color);
-    border: none;
-    border-radius: 2%;
-    color: var(--accent-color);
-    font-size: x-large;
-    min-width: 40%;
-    padding: .75%;
-}
-
-button:hover {
-}
-
-.button-group {
-    display: flex;
-    justify-content: center;
-}
-
-.contact-us-info {
-    width: 25%;
-}
-
-.contact-us-column-one {
-    display: column;
-    justify-items: center;
-    max-width: 25%;
-}
-
-.dog-image {
-    min-width: 1em;
-    min-height: 1em;
-    max-height: 5em;
-    max-width: 5em;
-
-    object-fit: cover;
-}
-
-.email {
-    display: flex;
-    align-items: center;
-    gap: 1em;
 }
 
 h2 {
@@ -95,57 +30,59 @@ h3 {
 h4 {
     color: var(--secondary-color);
 }
+
+/* ===== HEADER ===== */
 header {
     background-color: var(--main-color);
 }
 
-.hours {
-    display: column;
+.business-name {
+    color: var(--accent-color);
+    font-size: clamp(2em, 8vw, 5em);
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-top: 2%;
     text-align: center;
-    width: 25%;
-}
-html {
-    margin: var(--page-margin);
-    background-color: var(--secondary-color);
-    color: var(--accent-color)
 }
 
-.image-collection {
-    background-color: var(--accent-color);
-    border-bottom: 2px solid black;
-    border-left: 2px solid black;
-    border-right: 2px solid black;
-    display: inline-flex;
-    justify-content: center;
-    flex-direction: row;
-    margin-left: 1%;
-    margin-right: 2%;
-    max-width: fit-content;
-    width: 98%;
-}
-
-footer {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 2%;
-}
-
-.location {
-    display: column;
+.business-name-subheading {
+    font-size: clamp(1.5em, 5vw, 2.5em);
+    margin-left: 0px;
+    margin-top: 0px;
     text-align: center;
-    align-items: center;
-    width: 25%;
 }
 
-.phone {
-    display: flex;
-    align-items: center;
-    gap: 1em;
+.business-type {
+    border-bottom: 1px solid black;
+    color: var(--secondary-color);
+    text-align: right;
+    font-size: clamp(1em, 3vw, 1.2em);
 }
+
+/* ===== ABOUT SECTION ===== */
+.about-header {
+    margin-left: 0;
+    text-align: center;
+}
+
+.about {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* ===== SERVICES/BOARDING SECTION ===== */
+.boarding-header {
+    margin-left: 0;
+    text-align: center;
+}
+
 .services {
     display: block;
-    width: 50%;
+    width: 90%;
     margin: 0 auto;
+    padding: 1rem;
 }
 
 .service-and-rate {
@@ -153,30 +90,209 @@ footer {
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
-    width: 50%;
+    width: 100%;
+    padding: 0.5rem 0;
 }
 
 .service-and-rate-description {
     text-align: center;
-}
-/* .rates {
-    width: 40%;
-} */
-
-:root {
-    --page-margin: 2%;
-    /* --secondary-color: #00008b; */
-    --secondary-color: darkblue;
-    /* --main-color: #ffbfcabf; */
-    --main-color: hotpink;
-    --accent-color: white;
+    padding: 1rem 0;
 }
 
-.services-rates-columns {
+/* ===== BUTTONS ===== */
+.button-group {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    padding: 2rem 0;
 }
 
-.services-heading, .rates-heading {
-    margin-left: 0;
-} 
+button {
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 8px;
+    color: var(--accent-color);
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    min-width: 200px;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+/* ===== FOOTER (MOBILE-FIRST) ===== */
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2%;
+    padding: 1rem;
+}
+
+.contact-us-column-one {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contact-us-description {
+    margin: 1rem 0;
+}
+
+.phone,
+.email {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0.5rem 0;
+    flex-wrap: wrap;
+}
+
+.location {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+
+.hours {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+
+.hours h4 {
+    margin: 0.5rem 0;
+}
+
+.contact-us-info {
+    width: 100%;
+    text-align: center;
+}
+
+.contact-us-info h4 {
+    font-size: clamp(0.875rem, 2vw, 1rem);
+    line-height: 1.6;
+}
+
+/* ===== IMAGE COLLECTION ===== */
+.image-collection {
+    background-color: var(--accent-color);
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 1%;
+    margin-right: 2%;
+    width: 98%;
+}
+
+.dog-image {
+    min-width: 1em;
+    min-height: 1em;
+    max-height: 5em;
+    max-width: 5em;
+    object-fit: cover;
+}
+
+/* ===== MEDIA QUERIES ===== */
+
+/* Tablet (768px - 899px) - Keep single column but optimize width */
+@media screen and (min-width: 768px) {
+    .about,
+    .services {
+        width: 85%; /* Slightly narrower to use space better */
+        max-width: 650px; /* Prevent it from getting too wide */
+    }
+    
+    .service-and-rate {
+        width: 80%;
+    }
+    
+    /* Footer stays single column but more compact */
+    footer {
+        flex-direction: column;
+        max-width: 650px;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 1.5rem;
+    }
+    
+    .contact-us-column-one,
+    .location,
+    .hours,
+    .contact-us-info {
+        text-align: center;
+        width: 100%;
+    }
+
+    .contact-us-description {
+        text-align: left;
+    }
+
+    .phone {
+        justify-content: center;
+    }
+
+    .email {
+        justify-content: center;
+    }
+}
+
+/* Medium Tablet/Small Desktop (900px - 1023px) - Two column footer */
+@media screen and (min-width: 900px) {
+    footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 100%;
+        gap: 2rem;
+    }
+    
+    .contact-us-column-one,
+    .location,
+    .hours,
+    .contact-us-info {
+        width: 48%; /* Two columns */
+    }
+}
+
+/* Desktop (1024px+) - Four column layout */
+@media screen and (min-width: 1024px) {
+    .about,
+    .services {
+        width: 50%;
+        max-width: none;
+    }
+    
+    .service-and-rate {
+        width: 50%;
+    }
+    
+    footer {
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        gap: 1rem;
+    }
+    
+    .contact-us-column-one,
+    .location,
+    .hours,
+    .contact-us-info {
+        width: 25%; /* Four columns */
+    }
+}
+
+/* Large desktop (1440px+) */
+@media screen and (min-width: 1440px) {
+    body {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+}
