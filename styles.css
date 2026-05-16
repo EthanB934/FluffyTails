@@ -1,7 +1,12 @@
 .about {
-    left: 10%;
-    position: relative;
+    display: block;
     width: 50%;
+    margin: 0 auto;
+}
+
+.about-header {
+    margin-left: 0;
+    text-align: center;
 }
 
 body {
@@ -26,8 +31,8 @@ body {
 }
 
 .business-type {
+    border-bottom: 1px solid black;
     color: var(--secondary-color);
-    max-width: 90%;
     text-align: right;
 }
 
@@ -74,6 +79,10 @@ footer > p{
 
 h2 {
     margin-left: 4.75%;
+    color: var(--secondary-color);
+}
+
+h3 {
     color: var(--secondary-color);
 }
 
