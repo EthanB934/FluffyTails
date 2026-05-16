@@ -58,13 +58,14 @@ button:hover {
     justify-content: center;
 }
 
-.contact-us-description, .contact-us-info {
-    width: 40%;
+.contact-us-info {
+    width: 25%;
 }
 
 .contact-us-column-one {
     display: column;
     justify-items: center;
+    max-width: 25%;
 }
 
 .dog-image {
@@ -92,6 +93,11 @@ header {
     background-color: var(--main-color);
 }
 
+.hours {
+    display: column;
+    text-align: center;
+    width: 25%;
+}
 html {
     margin: var(--page-margin);
     background-color: var(--secondary-color);
@@ -114,15 +120,15 @@ html {
 
 footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-top: 2%;
 }
 
 .location {
-    display: flex;
+    display: column;
     text-align: center;
     align-items: center;
-    gap: 1em;
+    width: 25%;
 }
 
 .services {
