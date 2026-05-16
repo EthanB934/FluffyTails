@@ -30,6 +30,7 @@ h2 {
 
 h3 {
     color: var(--secondary-color);
+    text-align: center;
 }
 
 h4 {
@@ -41,15 +42,14 @@ header {
     background-color: var(--main-color);
 }
 
-.business-name {
-    color: var(--accent-color);
-    font-family: 'Fredoka', sans-serif; /* Playful, rounded */
-    font-size: clamp(2em, 8vw, 5em);
-    font-weight: 600;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    padding-top: 2%;
-    text-align: center;
+.business-name-image {
+    position: relative;
+    left: 1em;
+}
+.business-name-image-container {
+    display: flex;
+    justify-content: center;
+    padding: 1em 0;
 }
 
 .business-name-subheading {
@@ -210,6 +210,25 @@ footer {
 
 /* ===== MEDIA QUERIES ===== */
 
+/* Very small phones - 320px */
+@media screen and (max-width: 375px) {
+    .business-name-image {
+        width: 98%; /* Maximize space */
+        max-width: 320px;
+    }
+    
+    .contact-us-info h4 {
+        font-size: 0.75rem; /* Smaller text to prevent wrapping */
+        line-height: 1.5;
+    }
+    
+    .phone,
+    .email {
+        flex-direction: column; /* Stack label and value */
+        align-items: flex-start;
+    }
+}
+
 /* Tablet (768px - 899px) - Keep single column but optimize width */
 @media screen and (min-width: 768px) {
     .about,
@@ -218,6 +237,11 @@ footer {
         max-width: 650px; /* Prevent it from getting too wide */
     }
     
+    .business-name-image {
+        width: 95%; /* Slightly wider on mobile */
+        max-width: 400px; /* Smaller max on phones */
+    }
+
     .service-and-rate {
         width: 80%;
     }
