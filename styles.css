@@ -77,6 +77,12 @@ button:hover {
     object-fit: cover;
 }
 
+.email {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
 h2 {
     margin-left: 4.75%;
     color: var(--secondary-color);
@@ -131,6 +137,11 @@ footer {
     width: 25%;
 }
 
+.phone {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
 .services {
     display: block;
     width: 50%;
