@@ -43,6 +43,8 @@ header {
 }
 
 .business-name-image {
+    max-height: 5em;
+    max-width: 5em;
     position: relative;
     left: 1em;
 }
@@ -54,8 +56,7 @@ header {
 
 .business-name-subheading {
     font-size: clamp(1.5em, 5vw, 2.5em);
-    margin-left: 0px;
-    margin-top: 0px;
+    margin: 0 5em;
     text-align: center;
 }
 
@@ -64,6 +65,18 @@ header {
     color: var(--secondary-color);
     text-align: right;
     font-size: clamp(1em, 3vw, 1.2em);
+}
+
+.dog-icon {
+    float: left;
+    width: 10%;
+    max-width: 80px;
+}
+
+.paw-icon {
+    float: right;
+    width: 10%;
+    max-width: 80px;
 }
 
 /* ===== ABOUT SECTION ===== */
@@ -211,12 +224,19 @@ footer {
 /* ===== MEDIA QUERIES ===== */
 
 /* Very small phones - 320px */
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 767px) {
+    /* ===== HEADER ===== */
     .business-name-image {
+        position: static;
         width: 98%; /* Maximize space */
         max-width: 320px;
     }
     
+    .business-name-subheading {
+        margin: 0;
+    }
+
+    /* ===== FOOTER (MOBILE-FIRST) ===== */
     .contact-us-info h4 {
         font-size: 0.75rem; /* Smaller text to prevent wrapping */
         line-height: 1.5;
