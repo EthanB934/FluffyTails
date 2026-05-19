@@ -5,4 +5,5 @@ const formButton = document.querySelector(".form-button");
 
 formButton.addEventListener("click", printForm)
 
-renderImages();
+// Used for rendering images from ./assets/manifest.json
+// renderImages();
