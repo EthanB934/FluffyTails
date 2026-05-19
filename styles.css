@@ -23,6 +23,9 @@ body {
     padding: 2%;
 }
 
+h1 {
+    color: var(--secondary-color);
+}
 h2 {
     margin-left: 4.75%;
     color: var(--secondary-color);
