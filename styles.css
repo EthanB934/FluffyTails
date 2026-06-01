@@ -16,6 +16,11 @@ html {
     color: var(--accent-color);
 }
 
+a {
+    width: fit-content;
+    height: fit-content;
+}
+
 body {
     background-color: var(--main-color);
     font-family: 'Open Sans', sans-serif;
@@ -65,14 +70,27 @@ header {
 .business-type {
     border-bottom: 1px solid black;
     color: var(--secondary-color);
+    flex-grow: 1;
     text-align: right;
-    font-size: clamp(1em, 3vw, 1.2em);
+    font-size: clamp(1em, 3vw, 1.2em);  
+    margin-left: 0;
 }
 
 .dog-icon {
     float: left;
     width: 10%;
     max-width: 80px;
+}
+
+.facebook-and-type {
+    display: flex;
+    height: fit-content;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.facebook-logo {
+    max-height: 5em;
 }
 
 .paw-icon {
@@ -238,6 +256,16 @@ footer {
         margin: 0;
     }
 
+    .business-type {
+        margin-left: 0;
+    }
+
+    .facebook-logo {
+        left: 1.5em;
+        max-height: 1.5em;
+        position: relative;
+    }
+
     /* ===== FOOTER (MOBILE-FIRST) ===== */
     .contact-us-info h4 {
         font-size: 0.75rem; /* Smaller text to prevent wrapping */
@@ -262,6 +290,12 @@ footer {
     .business-name-image {
         width: 95%; /* Slightly wider on mobile */
         max-width: 400px; /* Smaller max on phones */
+    }
+
+    .facebook-logo {
+        left: 1.5em;
+        max-height: 1.5em;
+        position: relative;
     }
 
     .service-and-rate {
