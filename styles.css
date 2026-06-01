@@ -17,8 +17,8 @@ html {
 }
 
 a {
-    width: fit-content;
-    height: fit-content;
+    min-width: fit-content;
+    min-height: fit-content;
 }
 
 body {
@@ -245,6 +245,10 @@ footer {
 
 /* Very small phones - 320px */
 @media screen and (max-width: 767px) {
+    a {
+        left: 1.5em;
+        position: relative;
+    }
     /* ===== HEADER ===== */
     .business-name-image {
         position: static;
@@ -261,9 +265,8 @@ footer {
     }
 
     .facebook-logo {
-        left: 1.5em;
         max-height: 1.5em;
-        position: relative;
+        position: sticky;
     }
 
     /* ===== FOOTER (MOBILE-FIRST) ===== */
@@ -281,6 +284,11 @@ footer {
 
 /* Tablet (768px - 899px) - Keep single column but optimize width */
 @media screen and (min-width: 768px) {
+    a {
+        left: 1.5em;
+        position: relative;
+    }
+
     .about,
     .services {
         width: 85%; /* Slightly narrower to use space better */
@@ -293,9 +301,8 @@ footer {
     }
 
     .facebook-logo {
-        left: 1.5em;
         max-height: 1.5em;
-        position: relative;
+        position: sticky;
     }
 
     .service-and-rate {
