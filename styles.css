@@ -93,6 +93,10 @@ header {
     max-height: 5em;
 }
 
+.form-button {
+    min-width: 75vw;
+}
+
 .paw-icon {
     float: right;
     width: 10%;
