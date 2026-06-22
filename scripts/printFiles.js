@@ -8,17 +8,30 @@ function removePreviousIframe () {
 
 export default function printForm(event) {
     const formFileName = event.target.dataset.form;
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
     removePreviousIframe();
+    
+    const pdfPath = `./formFiles/${formFileName}.pdf`;
 
-    const iframe = document.createElement('iframe');
-    iframe.style.display = 'none';
-    iframe.src = `./formFiles/${formFileName}.pdf`;
 
-    iframe.onload = function () {
-        iframe.contentWindow.focus();
-        iframe.contentWindow.print();
-    }   
+    if(isMobile) {
+        const link = document.createElement('a');
+        link.href = pdfPath;
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+        link.click();
 
-    document.body.appendChild(iframe);
+    } else {
+        const iframe = document.createElement('iframe');
+        iframe.style.display = 'none';
+        iframe.src = pdfPath;
+
+        iframe.onload = function () {
+            iframe.contentWindow.focus();
+            iframe.contentWindow.print();
+        }   
+
+        document.body.appendChild(iframe);
+    };
 }
